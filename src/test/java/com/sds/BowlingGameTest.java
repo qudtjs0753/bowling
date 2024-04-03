@@ -105,19 +105,19 @@ class BowlingGameTest {
         assertEquals(300, subject.score());
     }
 
-//    @Test
-//    void doGame_thenReturnRightAnswer() {
-//
-//        //when
-//        List.of(10,9,1,7,0,9,1,10,10,8,2,10,9,1,9,1,7).forEach((element) -> {
-//            subject.roll(element);
-//
-//            System.out.println(subject.score());
-//        });
-//
-//        //the
-//        assertEquals(188, subject.score());
-//    }
+    @Test
+    void doGame_thenReturnRightAnswer() {
+
+        //when
+        List.of(10,9,1,7,0,9,1,10,10,8,2,10,9,1,9,1,7).forEach((element) -> {
+            subject.roll(element);
+
+            System.out.println(subject.score());
+        });
+
+        //the
+        assertEquals(188, subject.score());
+    }
 
     private void hitSamePinsSequentially(int score, int count) {
         for(int i=0; i<count; i++) {
